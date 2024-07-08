@@ -1,0 +1,27 @@
+# Configurações básicas
+title: "Mad Mage Dungeon"
+description: "Um site incrível hospedado no GitHub Pages"
+baseurl: "/nome-do-repositorio" # O subdiretório do seu site (nome do repositório)
+url: "https://madmagedungeon.github.io" # A URL do seu site
+
+# Informações do autor
+
+author:
+  name: "William Barros"
+  email: "mad.mage.rpg@gmail.com"
+
+#Outros detalhes
+
+permalink: /blog/:year/:month/:title
+language: pt
+paginate: 5
+paginate_path: "/blog/page:num/"
+compress_html:
+  clippings: []
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
