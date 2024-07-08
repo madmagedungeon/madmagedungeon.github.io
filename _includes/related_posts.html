@@ -12,3 +12,7 @@
 {% else %}
   <p>Nenhum post relacionado encontrado.</p>
 {% endif %}
+
+{% for item in site.posts | where_exp: "post","post.tags contains 'mytag'" %}
+ {item}
+{% endfor %}
