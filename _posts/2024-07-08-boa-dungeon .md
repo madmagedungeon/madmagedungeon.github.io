@@ -2,7 +2,7 @@
 layout: post
 title:  "RPG de Mesa Oldschool: Criando uma Boa Dungeon"
 author: "William Barros"
-image: "[https://images.ctfassets.net/aq13lwl6616q/2gqVi4hhjq9vgvdh63UoKZ/c763c6f7e98a80eb2800bbe5eb9d690d/react_native_zero_to_mastery.png](https://pbs.twimg.com/media/DxLvw85WwAALOIU.jpg:large)"
+image: "https://pbs.twimg.com/media/DxLvw85WwAALOIU.jpg:large"
 preview: "Os RPGs de mesa oldschool têm um charme único, com suas mecânicas simples  ..."
 ---
 <hr/><br/>
