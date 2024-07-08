@@ -1,21 +1,36 @@
 # Configurações básicas
 title: "Mad Mage Dungeon"
 description: "Um site incrível hospedado no GitHub Pages"
-baseurl: "/nome-do-repositorio" # O subdiretório do seu site (nome do repositório)
+baseurl: "./" # O subdiretório do seu site (nome do repositório)
 url: "https://madmagedungeon.github.io" # A URL do seu site
 
 # Informações do autor
-
 author:
   name: "William Barros"
   email: "mad.mage.rpg@gmail.com"
 
-#Outros detalhes
-
+# Outros detalhes
 permalink: /blog/:year/:month/:title
 language: pt
 paginate: 5
 paginate_path: "/blog/page:num/"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+
+# Compress HTML
 compress_html:
   clippings: []
   comments: []
