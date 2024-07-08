@@ -4,6 +4,8 @@ title:  "RPG de Mesa Oldschool: Criando uma Boa Dungeon"
 author: "William Barros"
 image: "https://pbs.twimg.com/media/DxLvw85WwAALOIU.jpg:large"
 preview: "Os RPGs de mesa oldschool têm um charme único, com suas mecânicas simples  ..."
+related: true
+tags: [Dungeon, rpg, dados]
 ---
 <hr/><br/>
 
