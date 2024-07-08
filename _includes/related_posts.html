@@ -4,12 +4,20 @@
 {% if site.related_posts.size >= 1 %}
 <div>
   <h3>Posts Relacionados:</h3>
-  <ul>
+  <div class="blog container">
     {% for related_post in site.related_posts limit: 5 %}
-    <li>
-      <img src="{{ related_post.image }}" width="80" height="80"/>
-      <a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
+   
+
+<div class="card">
+   <a href="{{ related_post.url }}" class="linkcard">
+      <img src="{{ related_post.image }}" class="card-img-top " alt="{{ related_post.title }}"> 
+      <div class="card-body">
+         <h5 class="card-title">{{ related_post.title }}</h5>
+         <p class="card-text">{{ related_post.title }}</p>
+      </div>
+   </a>
+</div>
     {% endfor %}
-  </ul>
+  </div>
 </div>
 {% endif %}
