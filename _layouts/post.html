@@ -26,11 +26,10 @@ layout: default
   var __semio__params = {
     graphcommentId: "Mad-Mage-Dungeon", 
     behaviour: {
-      uid: "{{ page.id }}", // uniq identifer for the comments thread on your page (ex: your page id)
+      uid: "{{ page.id }}", 
     },
-    // configure your variables here
   }
-  /* - - - DON'T EDIT BELOW THIS LINE - - - */
+
   function __semio__onload() {
     __semio__gc_graphlogin(__semio__params)
   }
