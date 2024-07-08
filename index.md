@@ -13,7 +13,7 @@ layout: default
             alt=" "></div>
 </div>
 <div style="border-top:3px dashed #4b515f; width:100%;"><br />
-    <h3> + Blog</h3>
+    <h3>Blog</h3>
 </div>
 <div class="blog container">{% for post in site.posts limit:6 %}<div class="card"><a
             href="{{ BASE_PATH }}{{ post.url }}" class="linkcard"><img src="{{ post.image }}" class="card-img-top "
