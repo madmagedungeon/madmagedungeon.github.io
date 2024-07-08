@@ -16,10 +16,16 @@ layout: default
   <div class="date">
 {{ page.date | date: "%d de %B de %Y" }} - Escrito por: {{ page.author }}
   </div>
+{% for tag in page.tags %}
+  <span class="badge text-bg-info">{{ tag }}</span>
+{% endfor %}
+  
   <hr/>
   <div class="entry">
     {{ content }}
   </div>
+
+  {% include related_posts.html %}
 <div id="graphcomment"></div>
 
 
@@ -27,5 +33,5 @@ layout: default
  {% comment %}
   <!-- Only show related pages on a page when `related: true` -->
 {% endcomment %}
-{% include related_posts.html %}
+
 </article>
