@@ -1,5 +1,6 @@
 ---
 layout: default
+related: true
 ---
 <article class="post">
 <div  style="
@@ -26,10 +27,5 @@ layout: default
  {% comment %}
   <!-- Only show related pages on a page when `related: true` -->
 {% endcomment %}
-{% if page.id and page.related %}
-  <div class="wrapper">
-    <h3>Veja também >> </h3>
-    {% include related.html %}
-  </div>
-{% endif %}
+{% include related_posts.html %}
 </article>
