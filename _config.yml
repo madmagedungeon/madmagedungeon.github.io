@@ -29,6 +29,7 @@ plugins:
   - jekyll-readme-index
   - jekyll-default-layout
   - jekyll-titles-from-headings
+  - jekyll-tagging-related_posts
 
 # Compress HTML
 compress_html:
