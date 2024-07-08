@@ -1,5 +1,5 @@
 <!-- _includes/related_posts.html -->
-{% assign related_posts = site.posts | where: page.tags %}
+{% assign related_posts = site.posts | where: "tags", page.tags %}
 {% if related_posts.size > 1 %}
   <h3>Posts Relacionados</h3>
   <ul>
