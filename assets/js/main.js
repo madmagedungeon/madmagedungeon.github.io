@@ -16,14 +16,13 @@ var idd = window.location.href + "";
     gc.onload = __semio__onload; gc.defer = true; gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
   })();
-
-
 var idx = lunr(function () {
     this.field('title')
     this.field('content')
+    this.field('tags')
     this.ref('url')
 
-    fetch('/search.json')
+    fetch('https://madmagedungeon.github.io/search.json')
       .then(response => response.json())
       .then(data => {
         data.forEach(function (doc) {
@@ -42,7 +41,8 @@ var idx = lunr(function () {
     if (results.length > 0) {
       results.forEach(function (result) {
         var li = document.createElement('li')
-        li.innerHTML = '<a href="' + result.ref + '">' + result.ref + '</a>'
+        var post = data.find(post => post.url === result.ref)
+        li.innerHTML = '<a href="' + post.url + '">' + post.title + '</a>'
         resultList.appendChild(li)
       })
     } else {
