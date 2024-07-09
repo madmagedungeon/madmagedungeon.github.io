@@ -81,10 +81,7 @@ layout: compress
                               
                               
                                 <li class="nav-item">
-                                    <a class="btn btn-outline-success secondcolor" target="_blank" href="https://github.com/wsilvabarros">
-                                     
-                                       []
-                                    </a>
+                                    <input type="text" id="search-input" class="btn btn-outline-danger secondcolor" placeholder="Pesquisar...">
                                 </li>
                             </ul>
                         </div>
@@ -127,6 +124,7 @@ layout: compress
                     </ul>
                 </div>
                 <div class="main-content">
+                    <ul id="results"></ul>
                     <br/>
                     {{ content }}
                 </div>
@@ -154,13 +152,6 @@ layout: compress
 </div>
 
            <script async src="https://madmagedungeon.github.io//assets/js/main.js"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV9W6K1F3P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QV9W6K1F3P');
-</script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
     </body>
 </html>
