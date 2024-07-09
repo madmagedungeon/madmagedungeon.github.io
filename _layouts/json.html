@@ -6,7 +6,8 @@ layout: null
   {
     "title": "{{ post.title | escape }}",
     "url": "{{ post.url | relative_url }}",
-    "content": "{{ post.content | strip_html | escape }}"
+    "tags": [{% for tag in post.tags %}"{{ tag }}", {% endfor %}],
+    "content": "{{ post.preview | strip_html | escape }}"
   }{% if forloop.last == false %},{% endif %}
 {% endfor %}
 ]
