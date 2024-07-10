@@ -2,13 +2,13 @@
 
 
 {% if site.related_posts.size >= 1 %}
-<div>
-  <hr/>
-  <h3>Posts Relacionados:</h3>
-  <div class="d-flex justify-content-center">
-    {% for related_post in site.related_posts limit: 3 %}
-   
+<div style="border:1px solid #ff034f; border-radius: 25px; padding:10px;">
 
+  <h3 color="#ff034f">Posts Relacionados:</h3>
+  <div class="d-flex justify-content-center" style=" border:1px solid #ff034f;">
+    {% for related_post in site.related_posts limit: 5 %}
+   
+ <a href="{{ related_post.url }}" style="color:white; text-decoration: none; ">
 <div style="margin:10px; width:550px; border-radius:15px;     
   background-color: #23272f;
     border: 1px solid #23272f;
@@ -19,16 +19,17 @@ flex-direction: row;
     box-shadow: 2px 0px 30px -11px rgba(0,0,0,0.67);
     -webkit-box-shadow: 2px 0px 30px -11px rgba(0,0,0,0.67);
     -moz-box-shadow: 2px 0px 30px -11px rgba(0, 0, 0, 0.67);">
-   <a href="{{ related_post.url }}" style="color:white; text-decoration: none; ">
+  
       <img src="{{ related_post.image }}" width="100" height="auto" style="border-radius:15px;" alt="{{ related_post.title }}"> 
-       </a>
+       
   <div style=" width: calc(100% - 131px); max-width: calc(100% - 130px); padding-left:15px; border-left: 5px solid white;margin-left:10px;">
-           <a href="{{ related_post.url }}" style="color:white;">
-             <h5 class="card-title" style="font-size:25px;">{{ related_post.title }}</h5>
-         <p class="card-text">{{ related_post.title }}</p>  </a>
+           
+             <h5 class="card-title" style="font-size:20px;">{{ related_post.title }}</h5>
+         <p class="card-text">{{ related_post.title }}</p>  
       </div>
   
 </div>
+  </a>
     {% endfor %}
   </div>
 </div>
