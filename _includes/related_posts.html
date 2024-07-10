@@ -20,11 +20,12 @@ flex-direction: row;
     -moz-box-shadow: 2px 0px 30px -11px rgba(0, 0, 0, 0.67);">
    <a href="{{ related_post.url }}" style="color:white;">
       <img src="{{ related_post.image }}" width="100" height="auto" style="border-radius:15px;" alt="{{ related_post.title }}"> 
-      <div style=" width: calc(100% - 131px); max-width: calc(100% - 130px);">
-         <span class="card-title" style="font-size:25px;">{{ related_post.title }}</span>
-         <p class="card-text">{{ related_post.title }}</p>
+       </a>
+  <div style=" width: calc(100% - 131px); max-width: calc(100% - 130px);">
+           <a href="{{ related_post.url }}" style="color:white;"> <span class="card-title" style="font-size:25px;">{{ related_post.title }}</span>
+         <p class="card-text">{{ related_post.title }}</p>  </a>
       </div>
-   </a>
+  
 </div>
     {% endfor %}
   </div>
