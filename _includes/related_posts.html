@@ -2,13 +2,14 @@
 
 
 {% if site.related_posts.size >= 1 %}
-<div>
+<div class="d-flex justify-content-center">
+  <hr/>
   <h3>Posts Relacionados:</h3>
   <div class="blog container">
     {% for related_post in site.related_posts limit: 3 %}
    
 
-<div style="margin:10px; width:calc(100% - 20px); border-radius:15px;     
+<div style="margin:10px; width:550px; border-radius:15px;     
   background-color: #23272f;
     border: 1px solid #23272f;
     color: white;
@@ -21,8 +22,9 @@ flex-direction: row;
    <a href="{{ related_post.url }}" style="color:white;">
       <img src="{{ related_post.image }}" width="100" height="auto" style="border-radius:15px;" alt="{{ related_post.title }}"> 
        </a>
-  <div style=" width: calc(100% - 131px); max-width: calc(100% - 130px);">
-           <a href="{{ related_post.url }}" style="color:white;"> <span class="card-title" style="font-size:25px;">{{ related_post.title }}</span>
+  <div style=" width: calc(100% - 131px); max-width: calc(100% - 130px); padding-left:15px; border-left: 5px solid white;">
+           <a href="{{ related_post.url }}" style="color:white;">
+             <h5 class="card-title" style="font-size:25px;">{{ related_post.title }}</h5>
          <p class="card-text">{{ related_post.title }}</p>  </a>
       </div>
   
@@ -31,3 +33,4 @@ flex-direction: row;
   </div>
 </div>
 {% endif %}
+<hr/>
