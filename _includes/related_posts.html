@@ -8,11 +8,19 @@
     {% for related_post in site.related_posts limit: 3 %}
    
 
-<div class="card">
-   <a href="{{ related_post.url }}" class="linkcard">
-      <img src="{{ related_post.image }}" class="card-img-top " alt="{{ related_post.title }}"> 
-      <div class="card-body">
-         <h5 class="card-title">{{ related_post.title }}</h5>
+<div style="margin:10px; width:calc(100% - 20px); border-radius:15px;     
+  background-color: #23272f;
+    border: 1px solid #23272f;
+    color: white;
+   display:flex;
+flex-direction: row;
+    box-shadow: 2px 0px 30px -11px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 2px 0px 30px -11px rgba(0,0,0,0.67);
+    -moz-box-shadow: 2px 0px 30px -11px rgba(0, 0, 0, 0.67);">
+   <a href="{{ related_post.url }}">
+      <img src="{{ related_post.image }}" width="100" height="auto" style="border-radius:15px;" alt="{{ related_post.title }}"> 
+      <div style=" width: calc(100% - 100px);">
+         <span class="card-title" style="font-size:35px;">{{ related_post.title }}</span>
          <p class="card-text">{{ related_post.title }}</p>
       </div>
    </a>
