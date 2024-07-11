@@ -140,6 +140,12 @@
               height:100%;
             }
         @media (max-width : 770px) {
+            .pos-logo{
+             border-left: 0px solid white;
+             display: flex;
+             justify-content: center;
+             flex-direction: column;
+            }
             .first-step-image{
                         width:250px;
               height: 250px;
