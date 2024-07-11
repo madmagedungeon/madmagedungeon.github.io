@@ -17,7 +17,6 @@ var idd = window.location.href + "";
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
   })();
 
-
 var idx;
 var data = [];
 
@@ -39,9 +38,11 @@ fetch('https://madmagedungeon.github.io/search.json')
   .catch(error => console.error('Error fetching search index:', error));
 
 document.getElementById('search-input').addEventListener('input', function () {
-  var query = this.value;
-  if (idx) {
-    var results = idx.search(query);
+  var query = this.value.trim();
+  if (idx && query.length > 0) {
+    // Adiciona wildcard ao início e ao final da query para buscas mais flexíveis
+    var lunrQuery = `*${query}*`;
+    var results = idx.search(lunrQuery);
     var resultList = document.getElementById('results');
     console.log(results);
     resultList.innerHTML = '';
@@ -51,13 +52,16 @@ document.getElementById('search-input').addEventListener('input', function () {
         var li = document.createElement('li');
         var post = data.find(post => post.url === result.ref);
         if (post) {
-          li.innerHTML = '<a href="' + post.url + '">' + post.title + '</a>';
+          li.innerHTML = '<a href="'window.location.protocol + "//" + window.location.host + post.url + '">' + post.title + '</a>';
           resultList.appendChild(li);
         }
       });
     } else {
       resultList.innerHTML = '<li>No results found</li>';
     }
+  } else {
+    document.getElementById('results').innerHTML = '<li>No results found</li>';
   }
 });
+
 
