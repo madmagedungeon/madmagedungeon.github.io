@@ -147,8 +147,8 @@
              flex-direction: column;
             }
             .first-step-image{
-                        width:250px;
-              height: 250px;
+                        width:100%;
+              height: auto;
             }
             .first-step{
               width:100%;
