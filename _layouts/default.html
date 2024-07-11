@@ -60,7 +60,7 @@ layout: compress
             var idx;
 var data = [];
 
-fetch(window.location.protocol + "//" + window.location.host + '/search.json')
+fetch('https://madmagedungeon.github.io/search.json')
   .then(response => response.json())
   .then(fetchedData => {
     data = fetchedData;
@@ -97,10 +97,10 @@ document.getElementById('search-input').addEventListener('input', function () {
         }
       });
     } else {
-      resultList.innerHTML = '<li>No results found</li>';
+      resultList.innerHTML = '<li>Nenhum resultado encontrado</li>';
     }
   } else {
-    document.getElementById('results').innerHTML = '<li>No results found</li>';
+    document.getElementById('results').innerHTML = '<li>Nenhum resultado encontrado</li>';
   }
 });
 
