@@ -16,36 +16,48 @@ var idd = window.location.href + "";
     gc.onload = __semio__onload; gc.defer = true; gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
   })();
-var idx = lunr(function () {
-    this.field('title')
-    this.field('content')
-    this.field('tags')
-    this.ref('url')
 
-    fetch('https://madmagedungeon.github.io/search.json')
-      .then(response => response.json())
-      .then(data => {
-        data.forEach(function (doc) {
-          this.add(doc)
-        }, this)
-      })
+
+var idx;
+var data = [];
+
+fetch('https://madmagedungeon.github.io/search.json')
+  .then(response => response.json())
+  .then(fetchedData => {
+    data = fetchedData;
+    idx = lunr(function () {
+      this.field('title');
+      this.field('content');
+      this.field('tags');
+      this.ref('url');
+      
+      fetchedData.forEach(function (doc) {
+        this.add(doc);
+      }, this);
+    });
   })
+  .catch(error => console.error('Error fetching search index:', error));
 
-  document.getElementById('search-input').addEventListener('input', function () {
-    var query = this.value
-    var results = idx.search(query)
-    var resultList = document.getElementById('results')
-
-    resultList.innerHTML = ''
+document.getElementById('search-input').addEventListener('input', function () {
+  var query = this.value;
+  if (idx) {
+    var results = idx.search(query);
+    var resultList = document.getElementById('results');
+    console.log(results);
+    resultList.innerHTML = '';
 
     if (results.length > 0) {
       results.forEach(function (result) {
-        var li = document.createElement('li')
-        var post = data.find(post => post.url === result.ref)
-        li.innerHTML = '<a href="' + post.url + '">' + post.title + '</a>'
-        resultList.appendChild(li)
-      })
+        var li = document.createElement('li');
+        var post = data.find(post => post.url === result.ref);
+        if (post) {
+          li.innerHTML = '<a href="' + post.url + '">' + post.title + '</a>';
+          resultList.appendChild(li);
+        }
+      });
     } else {
-      resultList.innerHTML = '<li>No results found</li>'
+      resultList.innerHTML = '<li>No results found</li>';
     }
-  })
+  }
+});
+
