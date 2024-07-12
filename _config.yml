@@ -9,6 +9,12 @@ author:
   name: "William Barros"
   email: "mad.mage.rpg@gmail.com"
 
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      lang: "pt"
 # Outros detalhes
 permalink: /blog/:year/:month/:title
 language: pt
