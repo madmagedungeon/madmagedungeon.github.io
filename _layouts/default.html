@@ -9,6 +9,7 @@ layout: compress
         {% if page.url == "/" %}
         <meta name="description" content="Mad Mage Dungeon é o seu portal para o mundo do RPG de mesa, repleto de dicas, adaptações, NPCs e cenários incríveis. Explore nossa masmorra virtual e transforme suas sessões em aventuras épicas. Prepare-se para rolagens memoráveis e momentos inesquecíveis à mesa!">
         {% else %}
+          <meta name="description" content="{{ page.preview }}" />
         {% endif %}
         <meta name="keywords" content="RPG, rpg de mesa, dnd, d&d, dungeon, elfo, mago, blog, dicas, OSR, Old Dragon, Tormenta    "/>
         <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | remove: 'index.html' }}">
