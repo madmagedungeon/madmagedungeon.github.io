@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Blog de Tecnologia"
+title:  "Últimos Posts"
 permalink: /blog
 ---
 
