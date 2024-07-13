@@ -5,7 +5,7 @@
 <div style="border:1px solid #ff034f; border-radius: 25px; padding:10px;">
 
   <h3 style="color:#ff034f;">Posts Relacionados:</h3>
-  <div class="d-flex justify-content-center" style=" border-top:2px dashed #ff034f;">
+  <div class="d-flex justify-content-center flex-column" style=" border-top:2px dashed #ff034f;">
     {% for related_post in site.related_posts limit: 5 %}
    
  <a href="{{ related_post.url }}" style="color:white; text-decoration: none; ">
