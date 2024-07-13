@@ -1,6 +1,7 @@
 {
-    "name": "Mad Mag Dungeon — Blog de RPG de Mesa",
+    "name": "Mad Mag Dungeon",
     "short_name": "Mad Mage Dungeon",
+    "start_url": "/#app",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -11,7 +12,13 @@
             "src": "/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
-        }
+        },
+    {
+      "src": "/maskable512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
     ],
     "theme_color": "#23272f",
     "background_color": "#23272f",
