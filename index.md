@@ -13,7 +13,7 @@ layout: default
             alt="Party de personagens de rpg"></div>
 </div>
 <div style=" width:100%;"><br />
-    <h3>Blog</h3>
+    <h2>Últimas Postagens</h2>
 </div>
 <div class="blog container">{% for post in site.posts limit:9 %}<div class="card"><a
             href="{{ BASE_PATH }}{{ post.url }}" class="linkcard"><img src="{{ post.image }}" class="card-img-top "
@@ -22,5 +22,5 @@ layout: default
                 <h5 class="card-title">{{ post.title }}</h5>
                 <p class="card-text">{{ post.preview }}</p>
             </div>
-        </a></div>{% endfor %}</div><a href="https://madmagedungeon.github.io/blog" class="btn btn-lg btn-danger" style="   font-family: 'League Spartan', sans-serif;"> Veja mais Posts! </a>
+        </a></div>{% endfor %}</div><div class="d-flex justify-content-center"><a href="https://madmagedungeon.github.io/blog" class="btn btn-lg btn-danger" style="   font-family: 'League Spartan', sans-serif; width:75%"> Veja mais Posts! </a></div>
      
