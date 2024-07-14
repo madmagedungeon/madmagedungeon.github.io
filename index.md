@@ -23,4 +23,4 @@ layout: default
                 <p class="card-text">{{ post.preview }}</p>
             </div>
         </a></div>{% endfor %}</div>
-        <a href="https://madmagedungeon.github.io/blog" class="btn btn-lg btn-danger" style="   font-family: 'League Spartan', sans-serif;"> Veja mais Posts! </a>
+     <a href="https://madmagedungeon.github.io/blog" class="btn btn-lg btn-danger" style="   font-family: 'League Spartan', sans-serif;"> Veja mais Posts! </a>
