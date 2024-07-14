@@ -59,10 +59,11 @@
             width: calc(100% - 260px);
         }
         .nav-link{
-            color: #7e8797;
+            color: white;/*#7e8797;*/
         }
         .nav-link:hover{
             color: #d3d3d3;
+                    border:1px solid #ff034f;
         }
         .blog{
             padding-top: 15px;
