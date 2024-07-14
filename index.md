@@ -4,7 +4,7 @@ layout: default
 <div class="first-content d-flex flex-column flex-md-row justify-content-between">
     <div class="order-md-1 d-flex justify-content-center align-items-center first-step">
         <div>
-            <h1> Entre nesta <b style="color:#ff034f;">Dungeon</b> e fique maluco por <b style="color:#ff034f;">RPG/b>!</h1><br />
+            <h1> Entre nesta <b style="color:#ff034f;">Dungeon</b> e fique maluco por <b style="color:#ff034f;">RPG</b>!</h1><br />
             <p>  </p>
         </div>
     </div>
