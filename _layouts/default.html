@@ -138,6 +138,7 @@ layout: compress
                               
                                 <li class="nav-item">
                                     <input type="text" id="search-input" class="btn btn-outline-danger secondcolor" placeholder="Pesquisar...">
+                                    
                                 </li>
                             </ul>
                         </nav>
@@ -169,7 +170,7 @@ layout: compress
                     </ul>
                 </div>
                 <div class="main-content">
-                    <ul id="results"></ul>
+                <ul id="results-container"></ul>
                     <br/>
                     {{ content }}
                 </div>
@@ -195,8 +196,14 @@ layout: compress
         </div>
     </div>
 </div>
-
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: 'https://madmagedungeon.github.io/search.json'
+})
+</script>
            <script defer src="https://cdn.jsdelivr.net/gh/madmagedungeon/madmagedungeon.github.io@main/assets/js/main.js"></script>
-      
+      <script defer src="https://cdn.jsdelivr.net/gh/madmagedungeon/madmagedungeon.github.io@main/assets/js/search.min.js"></script>
     </body>
 </html>
