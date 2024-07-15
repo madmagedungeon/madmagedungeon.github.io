@@ -9,7 +9,7 @@ layout: default
         </div>
     </div>
     <div class="order-md-2 d-flex justify-content-center align-items-center first-step"><img
-            src="https://cdn.jsdelivr.net/gh/madmagedungeon/mmd-images@main/rpg-party-photo.png" class="first-step-image"
+            src="https://cdn.jsdelivr.net/gh/madmagedungeon/mmd-images@main/rpg-party-photo.webp" class="first-step-image"
             alt="Party de personagens de rpg"></div>
 </div>
 <div style=" width:100%;"><br />
