@@ -11,9 +11,58 @@ layout: compress
         <link rel="preconnect" href="https://cdn.jsdelivr.net">
         <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
         {% if page.url == "/" %}
+ <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Mad Mage Dungeon",
+    "url": "{{ site.url | absolute_url }}",
+    "description": "Mad Mage Dungeon é o seu portal para o mundo do RPG de mesa, repleto de dicas, adaptações, NPCs e cenários incríveis. Explore nossa masmorra virtual e transforme suas sessões em aventuras épicas. Prepare-se para rolagens memoráveis e momentos inesquecíveis à mesa!",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Mad Mage Dungeon",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cdn.jsdelivr.net/gh/madmagedungeon/mmd-images@main/MadMageDungeon-logo.png"
+      }
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{{ site.url | absolute_url }}/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
         <meta name="description" content="Mad Mage Dungeon é o seu portal para o mundo do RPG de mesa, repleto de dicas, adaptações, NPCs e cenários incríveis. Explore nossa masmorra virtual e transforme suas sessões em aventuras épicas. Prepare-se para rolagens memoráveis e momentos inesquecíveis à mesa!">
         {% else %}
           <meta name="description" content="{{ page.preview }}" />
+ <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.url | absolute_url }}"
+    },
+    "headline": "{{ page.title }}",
+    "description": "{{ page.excerpt | strip_html }}",
+    "image": "{{ page.image | absolute_url }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ page.author }}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Mad Mage Dungeon",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cdn.jsdelivr.net/gh/madmagedungeon/mmd-images@main/MadMageDungeon-logo.png"
+      }
+    },
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.date | date_to_xmlschema }}"
+  }
+  </script>
         {% endif %}
         <meta name="keywords" content="RPG, rpg de mesa, dnd, d&d, dungeon, elfo, mago, blog, dicas, OSR, Old Dragon, Tormenta    "/>
         <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | remove: 'index.html' }}">
