@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;600;700&display=swap');
         
         body{
-            border-top:4px solid #ff034f73;
+            border-top:4px solid #ff034f;
             background-color: #23272f;
             color: white;
             font-family: 'League Spartan', sans-serif;
@@ -157,6 +157,16 @@
          background-color: #343c4b6b;
     padding: 10px;
     border-radius: 10px;
+}
+#results-container > li > a{
+        color:white;
+       
+        text-decoration: none;
+}
+#results-container > li > a:hover{
+        color:white;
+        border-bottom:1px solid #ff034f;
+        text-decoration: none;
 }
         @media (max-width : 770px) {
             .pos-logo{
