@@ -36,6 +36,7 @@ plugins:
   - jekyll-default-layout
   - jekyll-titles-from-headings
   - jekyll-tagging-related_posts
+  - jekyll-sitemap
 
 # Compress HTML
 compress_html:
