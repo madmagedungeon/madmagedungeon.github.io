@@ -219,7 +219,9 @@ layout: compress
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  json: 'https://madmagedungeon.github.io/search.json'
+  json: 'https://madmagedungeon.github.io/search.json',
+    noResultsText: '<li>Nenhum resultado encontrado!</li>',
+  searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>'
 })
 </script>
            <script defer src="https://cdn.jsdelivr.net/gh/madmagedungeon/madmagedungeon.github.io@main/assets/js/main.js"></script>
