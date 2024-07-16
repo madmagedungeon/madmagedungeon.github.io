@@ -19,6 +19,12 @@
             font-weight: 600;
             margin:0px;
         }
+        .omago{
+              font-family: 'League Spartan', sans-serif;
+                font-weight: 600;
+                margin: 0px;
+                font-size: 1.75rem;
+        }
         .main{
             position: relative;
             height: auto;
