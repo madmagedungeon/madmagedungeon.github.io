@@ -22,5 +22,5 @@ layout: default
                 <span class="card-title master-card">{{ post.title }}</span>
                 <p class="card-text">{{ post.preview }}</p>
             </div>
-        </a></div>{% endfor %}</div><div class="d-flex justify-content-center"><a href="https://madmagedungeon.github.io/blog" class="btn btn-lg btn-outline-danger" style="   font-family: 'League Spartan', sans-serif; width:75%"> Veja mais Posts! </a></div><br/><br/><br/>
+        </a></div>{% endfor %}</div><div class="d-flex justify-content-center"><a href="https://madmagedungeon.github.io/blog" class="btn btn-lg btn-danger" style="   font-family: 'League Spartan', sans-serif; width:75%"> Veja mais Posts! </a></div><br/><br/><br/>
      
