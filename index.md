@@ -19,7 +19,7 @@ layout: default
             href="{{ BASE_PATH }}{{ post.url }}" class="linkcard"><img src="{{ post.image }}" class="card-img-top "
                 alt="{{ post.title }}" />
             <div class="card-body">
-                <h5 class="card-title">{{ post.title }}</h5>
+                <span class="card-title master-card">{{ post.title }}</span>
                 <p class="card-text">{{ post.preview }}</p>
             </div>
         </a></div>{% endfor %}</div><div class="d-flex justify-content-center"><a href="https://madmagedungeon.github.io/blog" class="btn btn-lg btn-outline-danger" style="   font-family: 'League Spartan', sans-serif; width:75%"> Veja mais Posts! </a></div><br/><br/><br/>
