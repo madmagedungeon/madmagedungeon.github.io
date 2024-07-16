@@ -37,7 +37,11 @@ plugins:
   - jekyll-titles-from-headings
   - jekyll-tagging-related_posts
   - jekyll-sitemap
+  - jekyll-feed
 
+feed:
+  path: /blog/feed.atom
+  
 # Compress HTML
 compress_html:
   clippings: []
