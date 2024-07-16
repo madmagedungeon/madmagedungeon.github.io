@@ -153,6 +153,11 @@
             .first-step-image{
               height:100%;
             }
+#results-container > li{
+         background-color: #343c4b6b;
+    padding: 10px;
+    border-radius: 10px;
+}
         @media (max-width : 770px) {
             .pos-logo{
              border-left: 0px solid white;
